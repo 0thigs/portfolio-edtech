@@ -267,30 +267,24 @@ section {
 
 .floating-icon {
   position: absolute;
-  background: rgba(30, 30, 30, 0.8);
-  backdrop-filter: blur(5px);
-  border: 1px solid var(--border-color);
   border-radius: 12px;
-  padding: 12px;
   font-size: 1.8rem;
-  color: #fff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   animation: floatIcon 4s ease-in-out infinite;
 }
 
-.icon-react {
+.icon-github {
   top: 20px;
   left: 15px;
   color: #61dafb;
   animation-delay: 0s;
 }
-.icon-js {
+.icon-linkedin {
   bottom: 40px;
   right: 30px;
   color: #f7df1e;
   animation-delay: 1.5s;
 }
-.icon-code {
+.icon-instagram {
   top: 50%;
   right: -20px;
   color: var(--secondary-color);
@@ -342,6 +336,7 @@ section {
 
 .tech-card {
   display: flex;
+  justify-content: start;
   align-items: center;
   gap: 12px;
   background: rgba(255, 255, 255, 0.03);
@@ -349,6 +344,7 @@ section {
   padding: 12px 16px;
   border-radius: 12px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .tech-card:hover {
@@ -367,7 +363,25 @@ section {
   border-radius: 8px;
   font-size: 1.2rem;
 }
+.tech-icon img {
+  width: 70px;
+  height: 70px;
+}
 
+.social-icon-img {
+  width: 80px;
+  height: px;
+  transition: 0.3s;
+}
+
+.social-links a:hover .social-icon-img {
+  transform: translateY(-3px);
+}
+
+.contact-icon-img {
+  width: 20px;
+  height: 20px;
+}
 .tech-card span {
   font-size: 0.9rem;
   font-weight: 500;
