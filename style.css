@@ -234,7 +234,7 @@ ul {
   border-radius: 50%;
   border: 4px solid rgba(139, 92, 246, 0.3);
   box-shadow: 0 0 50px rgba(139, 92, 246, 0.2);
-  cursor: url('/images/pinguimcurto.png'), auto;
+  cursor: url('images/pinguimcurto.png'), auto;
 }
 
 .floating-icon {
