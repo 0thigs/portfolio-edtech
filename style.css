@@ -108,7 +108,7 @@ ul {
   height: 50px;
 }
 
-.nav-links {
+.header-links {
   display: flex;
   gap: 32px;
   align-items: center;
@@ -116,7 +116,7 @@ ul {
   font-size: 1rem;
 }
 
-.nav-links a:hover {
+.header-links a:hover {
   color: var(--text-main);
 }
 
@@ -132,10 +132,6 @@ ul {
   background: var(--gradient);
 }
 
-section {
-  padding: 160px 0;
-}
-
 .hero {
   text-align: center;
   min-height: 100vh;
@@ -147,16 +143,6 @@ section {
 
 .hero-text {
   max-width: 600px;
-}
-
-.badge {
-  background: rgba(139, 92, 246, 0.15);
-  color: var(--primary-color);
-  padding: 6px 14px;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
 .hero-text h1 {
@@ -258,6 +244,16 @@ section {
   animation: floatIcon 4s ease-in-out infinite;
 }
 
+@keyframes floatIcon {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
 .icon-github {
   top: 20px;
   left: 15px;
@@ -275,16 +271,6 @@ section {
   right: -20px;
   color: var(--secondary-color);
   animation-delay: 0.8s;
-}
-
-@keyframes floatIcon {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
 }
 
 .section-title {
@@ -348,6 +334,7 @@ section {
   border-radius: 8px;
   font-size: 1.2rem;
 }
+
 .tech-icon img {
   width: 80px;
   height: 80px;
@@ -359,14 +346,6 @@ section {
   transition: 0.3s;
 }
 
-.social-links a:hover .social-icon-img {
-  transform: translateY(-3px);
-}
-
-.contact-icon-img {
-  width: 20px;
-  height: 20px;
-}
 .tech-card span {
   font-size: 0.9rem;
   font-weight: 500;
@@ -418,13 +397,6 @@ section {
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
-}
-
-@media (max-width: 968px) {
-  .two-column-layout {
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
 }
 
 .curiosities-section {
@@ -635,7 +607,10 @@ section {
     grid-template-columns: 1fr;
   }
 
-
+  .two-column-layout {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
 
   .nav-links {
     display: none;
